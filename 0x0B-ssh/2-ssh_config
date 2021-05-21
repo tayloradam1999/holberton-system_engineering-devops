@@ -1,0 +1,5 @@
+Host holberton
+    Hostname 54.204.231.225
+    user vagrant
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/holberton
