@@ -13,17 +13,17 @@
 #    if the file is a regular file: holbertonschool is a regular file
 #    if the file is not a regular file: (nothing)
 file=holbertonschool
-if test -f "$file"; then
+if test -f "$file" || test -d "$file"; then
     echo "$file file exists"
     if [ -s $file ]; then
         echo "$file file is not empty"
     else
         echo "$file file is empty"
     fi
-    if [ -f $file ]; then
+    if [[ -d $file ]]; then
+        :
+    elif [[ -f $file ]]; then
         echo "$file is a regular file"
-    else
-        break
     fi
 else
     echo "$file file does not exist"
