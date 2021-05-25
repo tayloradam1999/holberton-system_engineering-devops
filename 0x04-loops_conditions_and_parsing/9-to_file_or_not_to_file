@@ -21,7 +21,7 @@ if test -f "$file"; then
         echo "$file file is empty"
     fi
     if [ -f $file ]; then
-        echo "$file file is a regular file"
+        echo "$file is a regular file"
     else
         break
     fi
