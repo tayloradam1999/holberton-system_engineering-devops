@@ -10,7 +10,7 @@ x=1
 y=0
 while [ $y -le 12 ]; do
     echo Hour: $y
-    while [ $x -le 60 ]; do
+    while [ $x -lt 60 ]; do
         echo $x
         ((x++))
     done
