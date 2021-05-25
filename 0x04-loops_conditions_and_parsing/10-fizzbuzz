@@ -9,7 +9,7 @@
 #Otherwise, displays the number
 #In a list format
 x=1
-for ((x=1; x<100; x++))
+for ((x=1; x<=100; x++))
 do
     if (( $x % 5 == 0 && $x % 3 == 0 ))
     then
