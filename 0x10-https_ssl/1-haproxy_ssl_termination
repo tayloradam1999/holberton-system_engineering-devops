@@ -36,7 +36,7 @@ defaults
 
 frontend http_web 
         bind *:80
-        bind *:443 ssl crt /etc/ssl/www.code-anything.tech/www.code-anything.tech.pem
+        bind *:443 ssl crt /etc/ssl/www.ProfPlum.tech/www.ProfPlum.tech.pem
         # Test URI to see if its a letsencrypt request
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         use_backend letsencrypt-backend if letsencrypt-acl
@@ -51,4 +51,3 @@ backend custom_backend
 
 backend letsencrypt-backend
         server letsencrypt 127.0.0.1:8888
-        
