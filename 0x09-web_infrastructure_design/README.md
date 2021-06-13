@@ -1,1 +1,1 @@
-# Web infrastructure project
+# Web Infrastructure Project
