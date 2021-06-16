@@ -31,4 +31,4 @@ if __name__ == "__main__":
           .format(name, count, len(tasks)))
 
     for task in task_list:
-        print("\t {}".format(title))
+        print("\t {}".format(task))
