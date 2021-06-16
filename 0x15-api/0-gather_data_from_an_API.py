@@ -13,7 +13,7 @@ def get_employee_tasks(employeeId):
     """ Get employee to do tasks """
 
     task_list = []
-    completed_counter = 0
+    count = 0
 
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(argv[1]))
@@ -25,11 +25,11 @@ def get_employee_tasks(employeeId):
 
     for task in tasks:
         if task.get('completed') is True:
-            completed_counter += 1
+            count += 1
             task_list.append(task.get('title'))
 
-    print("Employee {} is done with tasks({}/{}):"
-          .format(name, completed_counter, len(tasks)))
+    print('Employee {} is done with tasks({}/{}):'
+          .format(name, count, len(tasks)))
 
     for task in task_list:
         print("\t {}".format(title))
