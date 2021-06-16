@@ -9,8 +9,7 @@ import requests
 import sys
 
 
-def get_employee_tasks(employeeId):
-    """ Get employee to do tasks """
+if __name__ == "__main__":
 
     task_list = []
     count = 0
