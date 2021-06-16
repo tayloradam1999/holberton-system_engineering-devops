@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Create MySQL backup
+# Create a MySQL backup
 
 mysqldump -u root --password=$1 --all-databases > backup.sql
-currentDate='date +"%d-%m-%Y"'
+currentDate=`date +"%d-%m-%Y"`
 fileName=$currentDate.tar.gz
 tar -czvf $fileName backup.sql
